@@ -1,0 +1,11 @@
+import java.util.Scanner;
+
+public class crudoperations {
+public static void main(String[] args) {
+	Scanner scr=new Scanner(System.in);
+	int ch;
+	do {
+		ch=Integer.parseInt(scr.next());
+	} while (ch > 0);
+}
+}

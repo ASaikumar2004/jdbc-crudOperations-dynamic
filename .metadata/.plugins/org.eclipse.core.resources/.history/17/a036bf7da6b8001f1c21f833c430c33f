@@ -1,0 +1,38 @@
+import java.util.Scanner;
+
+public class crudoperations {
+public static void main(String[] args) {
+	Scanner scr=new Scanner(System.in);
+	int ch;
+	do {
+		getdetails();
+		ch=Integer.parseInt(scr.next());
+		switch (ch) {
+		case 1:
+			System.out.println("login works");
+			break;
+		
+		
+		default:
+			System.out.println("invalid operations");
+			break;
+		}
+	} while (ch > 0);
+}
+
+private static void getdetails() {
+	System.out.println("CoffeeWebsite Operations");
+	System.out.println("________________________");
+	System.out.println("Choose an Option");
+	System.out.println("\t 1.login");//get
+	System.out.println("\t 2.registration");//send
+	System.out.println("\t 3.adduser");//send
+	System.out.println("\t 4.deleteuser");//get
+	System.out.println("\t 5.modifyuserdetails");//send
+	System.out.println("\t 6.getalluserdetails");//get
+	System.out.println("\t 7.getuserdetailsbyemails");//get
+	System.out.println("\t 8.exit");
+	System.out.println("________________________");
+	
+}
+}
